@@ -3,11 +3,9 @@ var drums = document.querySelectorAll(".drum");
 for (i=0; i<drums.length;i++ ){
   drums[i].addEventListener("click", function(){
     var letter = this.innerHTML;
-    window.navigator.vibrate(100)
     makeSound(letter)
+    window.navigator.vibrate(100)
     buttonAnimation(letter)
-
-
   })
 
 };
